@@ -129,7 +129,7 @@ contract TripCoin is ERC20, Ownable, NonZero {
         icoEndsAt;                                              
            
 
-        totalSupply = 100000000000;                                                   // 100% - 100m
+        totalSupply = 200000000000;                                                   // 100% - 100m
         TripCoinTeamSupply = 10000000000;                                              // 10%
         ReserveSupply = 30000000000;                                                // 30% 
         incentivisingEffortsSupply = 10000000000;                                    // 10% 
