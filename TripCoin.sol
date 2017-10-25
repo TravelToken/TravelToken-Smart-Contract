@@ -168,7 +168,7 @@ contract TripCoin is ERC20, Ownable, NonZero {
     }
     function getRate() public constant returns (uint price) {
         if (now > presaleStartsAt && now < presaleEndsAt ) {
-           return 1200; 
+           return 1500; 
         } else if (now > icoStartsAt && now < icoEndsAt) {
            return 1000; 
         } 
