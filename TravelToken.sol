@@ -7,13 +7,13 @@ import "./NonZero.sol";
  
 
 
-contract TripCoin is ERC20, Ownable, NonZero {
+contract TravelToken is ERC20, Ownable, NonZero {
 
     using SafeMath for uint;
 
 
 /////////////////////// TOKEN INFORMATION ///////////////////////
-    string public constant name = "TripCoin";
+    string public constant name = "TravelToken";
     string public constant symbol = "TRIP";
     
     uint8 public decimals = 3;
@@ -25,8 +25,8 @@ contract TripCoin is ERC20, Ownable, NonZero {
 
 /////////////////////// VARIABLE INITIALIZATION ///////////////////////
     
-    // Allocation for the TripCoin Team
-    uint256 public TripCoinTeamSupply;
+    // Allocation for the TravelToken Team
+    uint256 public TravelTokenTeamSupply;
     // Reserve supply
     uint256 public ReserveSupply;
     // Amount of TripCoin for the presale
@@ -41,7 +41,7 @@ contract TripCoin is ERC20, Ownable, NonZero {
     uint256 public icoStartsAt;
     uint256 public icoEndsAt;
     
-    // TripCoin team address
+    // TravelToken team address
     address public TripCoinTeamAddress;
     // Reserve address
     address public ReserveAddress;
@@ -130,14 +130,14 @@ contract TripCoin is ERC20, Ownable, NonZero {
            
 
         totalSupply = 200000000000;                                                   // 100% - 200m
-        TripCoinTeamSupply = 20000000000;                                              // 10%
+        TravelTokenTeamSupply = 20000000000;                                              // 10%
         ReserveSupply = 60000000000;                                                // 30% 
         incentivisingEffortsSupply = 20000000000;                                    // 10% 
         icosSupply = 60000000000;                                                // 30%
         presaleSupply = 40000000000;                                                    // 20%
        
        
-        TripCoinTeamAddress              // TripCoin Team Address
+        TravelTokenTeamAddress              // TravelToken Team Address
         ReserveAddress             // Reserve Address
         incentivisingEffortsAddress ;   // Community incentivisation address
 
@@ -174,7 +174,7 @@ contract TripCoin is ERC20, Ownable, NonZero {
         } 
     }       
     
-    TripCoin public token;
+    TravelToken public token;
     
      function buyTokens(address _to) nonZeroAddress(_to) nonZeroValue payable {
         uint256 weiAmount = msg.value;
