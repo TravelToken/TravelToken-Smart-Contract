@@ -14,9 +14,9 @@ contract TravelToken is ERC20, Ownable, NonZero {
 
 /////////////////////// TOKEN INFORMATION ///////////////////////
     string public constant name = "TravelToken";
-    string public constant symbol = "TRIP";
+    string public constant symbol = "TTC";
     
-    uint8 public decimals = 3;
+    uint8 public decimals = 18;
     
     // Mapping to keep user's balances
     mapping (address => uint256) balances;
@@ -42,7 +42,7 @@ contract TravelToken is ERC20, Ownable, NonZero {
     uint256 public icoEndsAt;
     
     // TravelToken team address
-    address public TripCoinTeamAddress;
+    address public TravelTokenTeamAddress;
     // Reserve address
     address public ReserveAddress;
     // Community incentivisation address
@@ -129,12 +129,12 @@ contract TravelToken is ERC20, Ownable, NonZero {
         icoEndsAt;                                              
            
 
-        totalSupply = 200000000000;                                                   // 100% - 200m
-        TravelTokenTeamSupply = 20000000000;                                              // 10%
-        ReserveSupply = 60000000000;                                                // 30% 
-        incentivisingEffortsSupply = 20000000000;                                    // 10% 
-        icosSupply = 60000000000;                                                // 30%
-        presaleSupply = 40000000000;                                                    // 20%
+        totalSupply = 200000000000000000000000000;                                                   // 100% - 200m
+        TravelTokenTeamSupply = 20000000000000000000000000;                                              // 10%
+        ReserveSupply = 60000000000000000000000000;                                                // 30% 
+        incentivisingEffortsSupply = 20000000000000000000000000;                                    // 10% 
+        icosSupply = 600000000000000000000000000;                                                // 30%
+        presaleSupply = 40000000000000000000000000;                                                    // 20%
        
        
         TravelTokenTeamAddress              // TravelToken Team Address
